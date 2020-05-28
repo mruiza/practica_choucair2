@@ -13,7 +13,7 @@ Feature: Registro en la aplicación Trello
     Given Ingreso a la pagina web de Trello
     When Creo una cuenta nueva en Trello
     |Email                |Nombre    |Contrasena|
-    |mariaruiz000@yahoo.com|Alejandra |Lolo*1994+|
+    |lolo1234@gmail.com   |Alejandra |Lolo*1994+|
     Then Verifico creación exitosa del usuario
     
   @creartableros
