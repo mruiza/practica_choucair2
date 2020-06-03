@@ -16,10 +16,10 @@ public class FormularioCreaTuCuentaPages extends PageObject {
 	@FindBy(id = "signup-submit")
 	private WebElementFacade btnContinuar;
 	
-	@FindBy(xpath = "//h5[text()='Regístrate para obtener tu cuenta']//following::input[2]")
+	@FindBy(id = "name")
 	private WebElementFacade txtNombre;
-	
-	@FindBy(xpath = "//h5[text()='Regístrate para obtener tu cuenta']//following::input[3]")
+		
+	@FindBy(id = "password")
 	private WebElementFacade txtContrasena;
 	
 	@FindBy(xpath = "//span[text()='¡Bienvenido a Trello!']")
@@ -27,7 +27,6 @@ public class FormularioCreaTuCuentaPages extends PageObject {
 	
 	@FindBy(xpath = "//form[@id='signup']")
 	private WebElementFacade frmInicio;
-	
 	
 	
 	public void ingresar_email(String email) {

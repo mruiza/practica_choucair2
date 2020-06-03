@@ -6,7 +6,7 @@ import net.thucydides.core.annotations.Step;
 
 public class IniciarSesionEnTrelloSteps {
 
-	IniciarSesionEnTrelloPages iniciarSesionEnTrelloPages;
+IniciarSesionEnTrelloPages iniciarSesionEnTrelloPages;
 	
 	@Step
 	public void ingresar_datos_inicio_sesion(List<String> data) {

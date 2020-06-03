@@ -12,24 +12,23 @@ Feature: Registro en la aplicación Trello
   Scenario: Realizar el registro en la aplicación Trello
     Given Ingreso a la pagina web de Trello
     When Creo una cuenta nueva en Trello
-    |Email                |Nombre    |Contrasena|
-    |lolo1234@gmail.com   |Alejandra |Lolo*1994+|
+    |email|nombre|contrasena|
+    |lolo1234@gmail.com|Alejandra|Lolo*1994+|
     Then Verifico creación exitosa del usuario
     
   @creartableros
     Scenario Outline: Crear tablero en trello
     Given Autenticacion en trello
-    |<Email>|<Contrasena>|
+    |<email>|<contrasena>|
     When Creo el tablero
-    |<Nombre_tablero>|
-    Then Verifico creación exitosa del tablero 
-    |<Nombre_tablero>|
+    |<nombre_tablero>|
+    Then Verifico creación exitosa del tablero  
+    |<nombre_tablero>|
       
+  
     Examples:
-    |Email|Nombre|Contrasena|Nombre_tablero|
+   |email                |nombre      |contrasena   |nombre_tablero|
     ##@externaldata@src\test\resources\Datadriven\datosderegistro.xlsx@registro
    |lolo1234@gmail.com   |Alejandra   |Lolo*1994+   |Prueba1|
    |lolo1234@gmail.com   |Alejandra   |Lolo*1994+   |Prueba2|
    |lolo1234@gmail.com   |Alejandra   |Lolo*1994+   |Prueba3|
-
-  

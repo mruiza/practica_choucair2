@@ -1,7 +1,6 @@
 package net.practicadoschoucair.bdd.definition;
 
 import java.util.List;
-
 import cucumber.api.java.en.Given;
 import net.practicadoschoucair.bdd.steps.IniciarSesionEnTrelloSteps;
 import net.thucydides.core.annotations.Steps;
